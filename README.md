@@ -26,7 +26,7 @@ in CatCollectionView
 Files:
   - left example: in CirclePicker
   - middle example: in SliderPicker
-  - right example: in  CalenderView, original from SwiftUI-lab
+  - right example: in  CalenderView, original from SwiftUI-lab https://swiftui-lab.com/matchedgeometryeffect-part2/
  
  
 ## Pickers with multiple selected elements
