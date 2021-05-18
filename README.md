@@ -2,6 +2,12 @@
 
 This demo project demonstrates different use cases for matched geometry effect in SwiftUI.
 
+matchedGeometryEffect(id:in:properties:anchor:isSource:)
+
+Important:
+- only use one view with isSource is true (for the same id)
+- does not work with NavigationView transition to Detail or sheets, popover etc.
+
 
 # animation of layout changes
 example: switch between HStack and VStack depending on device orientation
