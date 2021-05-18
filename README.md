@@ -2,11 +2,11 @@
 
 This demo project demonstrates different use cases for matched geometry effect in SwiftUI.
 
-matchedGeometryEffect(id:in:properties:anchor:isSource:)
+matchedGeometryEffect(id:in:properties:anchor :isSource:)
 
-Important:
+**Important:**
 - only use one view with isSource is true (for the same id)
-- does not work with NavigationView transition to Detail or sheets, popover etc.
+- does not work with NavigationView (transition to detail) or sheets, popover etc.
 
 
 # animation of layout changes
