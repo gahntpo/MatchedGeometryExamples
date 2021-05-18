@@ -15,6 +15,13 @@
 		175EB50026512BF2000B1282 /* SwopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EB4FF26512BF2000B1282 /* SwopView.swift */; };
 		175EB50226512D7B000B1282 /* ConditionalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EB50126512D7B000B1282 /* ConditionalStack.swift */; };
 		175EB50426512DA4000B1282 /* AdaptiveCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EB50326512DA4000B1282 /* AdaptiveCatView.swift */; };
+		1782890C2653910C00349327 /* CatCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782890B2653910C00349327 /* CatCollectionView.swift */; };
+		178289152653A1DA00349327 /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178289142653A1DA00349327 /* CatView.swift */; };
+		1782891A2653AE9A00349327 /* CirclePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178289192653AE9A00349327 /* CirclePicker.swift */; };
+		1782891C2653B35400349327 /* PickerExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782891B2653B35400349327 /* PickerExamples.swift */; };
+		1782891E2653B49400349327 /* SliderPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782891D2653B49400349327 /* SliderPicker.swift */; };
+		178289202653B66200349327 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782891F2653B66200349327 /* CalenderView.swift */; };
+		178289222653B81B00349327 /* EmojisPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178289212653B81B00349327 /* EmojisPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		175EB4FF26512BF2000B1282 /* SwopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwopView.swift; sourceTree = "<group>"; };
 		175EB50126512D7B000B1282 /* ConditionalStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionalStack.swift; sourceTree = "<group>"; };
 		175EB50326512DA4000B1282 /* AdaptiveCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveCatView.swift; sourceTree = "<group>"; };
+		1782890B2653910C00349327 /* CatCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionView.swift; sourceTree = "<group>"; };
+		178289142653A1DA00349327 /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
+		178289192653AE9A00349327 /* CirclePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePicker.swift; sourceTree = "<group>"; };
+		1782891B2653B35400349327 /* PickerExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerExamples.swift; sourceTree = "<group>"; };
+		1782891D2653B49400349327 /* SliderPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPicker.swift; sourceTree = "<group>"; };
+		1782891F2653B66200349327 /* CalenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		178289212653B81B00349327 /* EmojisPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +78,9 @@
 				175EB4EF265126C4000B1282 /* ContentView.swift */,
 				175EB4FC2651270A000B1282 /* basics */,
 				175EB4F1265126C8000B1282 /* Assets.xcassets */,
+				1782890A265390F100349327 /* hero animation */,
 				175EB4F6265126C8000B1282 /* Info.plist */,
+				178289182653AE7F00349327 /* Pickers */,
 				175EB4F3265126C8000B1282 /* Preview Content */,
 			);
 			path = MatchedGeometryExamples;
@@ -87,6 +103,27 @@
 				175EB50326512DA4000B1282 /* AdaptiveCatView.swift */,
 			);
 			path = basics;
+			sourceTree = "<group>";
+		};
+		1782890A265390F100349327 /* hero animation */ = {
+			isa = PBXGroup;
+			children = (
+				1782890B2653910C00349327 /* CatCollectionView.swift */,
+				178289142653A1DA00349327 /* CatView.swift */,
+			);
+			path = "hero animation";
+			sourceTree = "<group>";
+		};
+		178289182653AE7F00349327 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				178289192653AE9A00349327 /* CirclePicker.swift */,
+				1782891B2653B35400349327 /* PickerExamples.swift */,
+				1782891D2653B49400349327 /* SliderPicker.swift */,
+				1782891F2653B66200349327 /* CalenderView.swift */,
+				178289212653B81B00349327 /* EmojisPicker.swift */,
+			);
+			path = Pickers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +195,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1782891A2653AE9A00349327 /* CirclePicker.swift in Sources */,
+				178289222653B81B00349327 /* EmojisPicker.swift in Sources */,
 				175EB4F0265126C4000B1282 /* ContentView.swift in Sources */,
+				178289202653B66200349327 /* CalenderView.swift in Sources */,
 				175EB50026512BF2000B1282 /* SwopView.swift in Sources */,
 				175EB4EE265126C4000B1282 /* MatchedGeometryExamplesApp.swift in Sources */,
+				1782891E2653B49400349327 /* SliderPicker.swift in Sources */,
+				1782891C2653B35400349327 /* PickerExamples.swift in Sources */,
+				178289152653A1DA00349327 /* CatView.swift in Sources */,
+				1782890C2653910C00349327 /* CatCollectionView.swift in Sources */,
 				175EB50426512DA4000B1282 /* AdaptiveCatView.swift in Sources */,
 				175EB4FE2651272A000B1282 /* MatchFrameExample.swift in Sources */,
 				175EB50226512D7B000B1282 /* ConditionalStack.swift in Sources */,
