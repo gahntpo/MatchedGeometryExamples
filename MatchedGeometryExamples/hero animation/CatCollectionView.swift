@@ -11,12 +11,14 @@ struct CatCollectionView: View {
     let cats: [String] = ["minime", "minime_serious", "cleo"]
     
     @State private var selectedCat: String? = nil
+    @State private var topmostCat: String? = nil
     @Namespace private var namespace
     
     var body: some View {
         ZStack {
             VStack {
                 Text("Meet the cats").font(.title)
+                    .blur(radius: (selectedCat == nil) ? 0 : 5)
                 
                 ScrollView(.horizontal) {
                     LazyHStack(spacing: 10) {
@@ -25,12 +27,10 @@ struct CatCollectionView: View {
                             Image(cat)
                                 .resizable()
                                 .scaledToFill()
+                                //
                                 
-                                .animation(nil)
                                 .matchedGeometryEffect(id: cat,
                                                        in: namespace,
-                                                       properties: .frame,
-                                                       anchor: .center,
                                                        isSource: cat != selectedCat)
                                 .frame(maxWidth: 160, maxHeight: 160)
                                 .cornerRadius(20)
@@ -40,12 +40,13 @@ struct CatCollectionView: View {
                                     }
                                     
                                 }
-                                .zIndex(cat == selectedCat ? 1 : 0)
+                                .zIndex(cat == topmostCat ? 1 : 0)
+                                .blur(radius: ((cat == topmostCat) || (selectedCat == nil)) ? 0 : 5)
                         }
                         
                     }.padding()
                 }
-                .frame(maxHeight: 200)
+               .frame(maxHeight: 200)
                 
                 
                 Spacer()
@@ -54,11 +55,15 @@ struct CatCollectionView: View {
             if selectedCat != nil {
                 
                 CatView(namespace: namespace, selectedCat: $selectedCat)
-                
+                    .zIndex(2)
                 
             }
             
-        }
+        }.onChange(of: selectedCat, perform: { value in
+            //this is needed to keep the disappearing overlay view on top
+            // of the other views in the Foreach
+            topmostCat = value
+        })
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1720AEF7265548C4002875AB /* heroanimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1720AEF6265548C4002875AB /* heroanimation.gif */; };
 		175EB4EE265126C4000B1282 /* MatchedGeometryExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EB4ED265126C4000B1282 /* MatchedGeometryExamplesApp.swift */; };
 		175EB4F0265126C4000B1282 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EB4EF265126C4000B1282 /* ContentView.swift */; };
 		175EB4F2265126C8000B1282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175EB4F1265126C8000B1282 /* Assets.xcassets */; };
@@ -27,10 +28,10 @@
 		1782892E2653C19500349327 /* sliderpicker.gif in Resources */ = {isa = PBXBuildFile; fileRef = 178289282653C19400349327 /* sliderpicker.gif */; };
 		1782892F2653C19500349327 /* layoutanimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 178289292653C19400349327 /* layoutanimation.gif */; };
 		178289312653C19500349327 /* emojipicker.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1782892B2653C19500349327 /* emojipicker.gif */; };
-		178289332653C22E00349327 /* heroanimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 178289322653C22E00349327 /* heroanimation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1720AEF6265548C4002875AB /* heroanimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heroanimation.gif; sourceTree = "<group>"; };
 		175EB4EA265126C4000B1282 /* MatchedGeometryExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchedGeometryExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175EB4ED265126C4000B1282 /* MatchedGeometryExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryExamplesApp.swift; sourceTree = "<group>"; };
 		175EB4EF265126C4000B1282 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		178289282653C19400349327 /* sliderpicker.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sliderpicker.gif; sourceTree = "<group>"; };
 		178289292653C19400349327 /* layoutanimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = layoutanimation.gif; sourceTree = "<group>"; };
 		1782892B2653C19500349327 /* emojipicker.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = emojipicker.gif; sourceTree = "<group>"; };
-		178289322653C22E00349327 /* heroanimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heroanimation.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 				178289262653C19400349327 /* calenderview.gif */,
 				1782892B2653C19500349327 /* emojipicker.gif */,
 				178289292653C19400349327 /* layoutanimation.gif */,
-				178289322653C22E00349327 /* heroanimation.gif */,
+				1720AEF6265548C4002875AB /* heroanimation.gif */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				175EB4F2265126C8000B1282 /* Assets.xcassets in Resources */,
 				1782892E2653C19500349327 /* sliderpicker.gif in Resources */,
 				178289252653C11800349327 /* circlepicker.gif in Resources */,
-				178289332653C22E00349327 /* heroanimation.gif in Resources */,
+				1720AEF7265548C4002875AB /* heroanimation.gif in Resources */,
 				1782892C2653C19500349327 /* calenderview.gif in Resources */,
 				178289312653C19500349327 /* emojipicker.gif in Resources */,
 			);

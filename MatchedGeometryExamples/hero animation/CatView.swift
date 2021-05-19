@@ -20,17 +20,14 @@ struct CatView: View {
             VStack {
             Image(selectedCat!)
                 .resizable()
-                .scaledToFit()
-              
+                .scaledToFit()              
                 .animation(nil)
-                
-                .transition(.asymmetric(insertion: .identity, removal: .opacity))
                 .matchedGeometryEffect(id: selectedCat!,
                                        in: namespace,
                                        properties: .frame,
                                        anchor: .center,
                                        isSource: selectedCat != nil)
-                
+           
                 Text("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitre.")
                     .font(.footnote)
                     .padding()
@@ -38,8 +35,9 @@ struct CatView: View {
             }
             .cornerRadius(cornerRadius)
             .background(Color(.systemBackground)
-                            .cornerRadius(20)
-                            .shadow(radius: cornerRadius))
+                            .cornerRadius(cornerRadius)
+                            .shadow(radius: 10))
+            
             .padding()
             .onTapGesture {
                 withAnimation {
